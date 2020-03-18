@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1584549691365.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "919CD861",
+    "lastKnownWriteTime" : 1584553728,
+    "last_content_update" : 1584553728296,
+    "path" : "~/Applications/InterActiveShinyMap/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+        "cursorPosition" : "35,7",
+        "scrollLine" : "21",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

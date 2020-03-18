@@ -1,0 +1,5 @@
+ASI,CCSD,geojson
+84765,123W,"{""type"":""Feature"",""id"":""2345"",""geometry"":{""type"":""LineString"",""coordinates"":[[-90.1994,38.6270],[-77.0369,38.9072]]},""properties"":{""popup"":""<table border=1><tr><td>value0</td></tr></table>"",""prop1"": ""value1"",""style"":{""color"":""green"",""width"":2}}}"
+84765,234F,"{""type"":""Feature"",""id"":""2345"",""geometry"":{""type"":""LineString"",""coordinates"":[[-90.1994,38.6270],[-111.8910,40.7608]]},""properties"":{""popup"":""value0"",""prop1"":""value1""}}"
+93856,123W,"{""type"":""Feature"",""id"":""2345"",""geometry"":{""type"":""LineString"",""coordinates"":[[-90.1994,38.6270],[-77.0369,38.9072]]},""properties"":{""popup"":""<table border=1><tr><td>value0</td></tr></table>"",""prop1"": ""value1"",""style"":{""color"":""green"",""width"":2}}}"
+49875,234F,"{""type"":""Feature"",""id"":""2345"",""geometry"":{""type"":""LineString"",""coordinates"":[[-90.1994,38.6270],[-111.8910,40.7608]]},""properties"":{""popup"":""value0"",""prop1"":""value1""}}"
