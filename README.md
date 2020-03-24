@@ -35,20 +35,20 @@ click the raw button to see the real script.
 #yum install -y libxt-dev  
 #yum install -y ibv8-dev  
 
-**#Note: if you use the free version of AWS and need to use the R library ‘readr’, you will have to create swap file**  
+###### **#Note: if you use the free version of AWS and need to use the R library ‘readr’, you need to create swap file.**  
 #see link the link below for 4Gb of swap.  
 #https://aws.amazon.com/premiumsupport/knowledge-center/ec2-memory-swap-file/
 
-#install R
-**yum install -y R**
+#install R.  
+## **yum install -y R**
 
 #install RStudio-Server 1.2.5033 (2017-07-20)  
-wget https://download2.rstudio.org/server/centos6/x86_64/rstudio-server-rhel-1.2.5033-x86_64.rpm  
-yum install -y --nogpgcheck rstudio-server-rhel-1.2.5033-x86_64.rpm  
-rm rstudio-server-rhel-1.2.5033-x86_64.rpm  
+## wget https://download2.rstudio.org/server/centos6/x86_64/rstudio-server-rhel-1.2.5033-x86_64.rpm  
+## yum install -y --nogpgcheck rstudio-server-rhel-1.2.5033-x86_64.rpm  
+## rm rstudio-server-rhel-1.2.5033-x86_64.rpm  
 
 #install shiny 
-R -e "install.packages('shiny', repos='http://cran.rstudio.com/')"  
+## R -e "install.packages('shiny', repos='http://cran.rstudio.com/')"  
 
 _#install other you may need_  
 _#R -e \"install.packages(c('rmarkdown', 'shinydashboard', 'shinyjs'), repos='http://cran.rstudio.com/')"_  
@@ -83,14 +83,14 @@ _#R -e "install.packages(c('DT'), repos='http://cran.rstudio.com/')"_
 
 
 #install shiny-server 1.5.13.944 (2020-03-21)  
-wget https://download3.rstudio.org/centos6.3/x86_64/shiny-server-1.5.13.944-x86_64.rpm
-yum install -y --nogpgcheck shiny-server-1.5.13.944-x86_64.rpm
-rm shiny-server-1.4.2.786-rh5-x86_64.rpm
+## wget https://download3.rstudio.org/centos6.3/x86_64/shiny-server-1.5.13.944-x86_64.rpm
+## yum install -y --nogpgcheck shiny-server-1.5.13.944-x86_64.rpm  
+## rm shiny-server-1.4.2.786-rh5-x86_64.rpm
 
-#update redhat
-yum install -y curl-devel
+#update redhat  
+## yum install -y curl-devel
 
-#set up user of shiny studio. Be sure to replace ‘myusername’ with your own 
-#username and replace ‘thisismypassword’ with your own password
-useradd myusername 
-echo myusername:thisismypassword | chpasswd
+#set up user of shiny studio. Be sure to replace ‘myusername’ with your own  
+#username and replace ‘thisismypassword’ with your own password  
+## useradd myusername 
+## echo myusername:thisismypassword | chpasswd
