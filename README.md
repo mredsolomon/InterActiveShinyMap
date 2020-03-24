@@ -9,7 +9,6 @@ https://mredsolo.shinyapps.io/InterActiveShinyMap/
 Use the below script to assist in setting up AWS instance of a server.
 click the raw button to see the real script.
 
-> the present is our past.
 
 
 #!/bin/bash  
@@ -41,15 +40,15 @@ click the raw button to see the real script.
 #https://aws.amazon.com/premiumsupport/knowledge-center/ec2-memory-swap-file/
 
 #install R
-> yum install -y R
+**yum install -y R**
 
-#install RStudio-Server 1.2.5033 (2017-07-20)
-> wget https://download2.rstudio.org/server/centos6/x86_64/rstudio-server-rhel-1.2.5033-x86_64.rpm  
-> yum install -y --nogpgcheck rstudio-server-rhel-1.2.5033-x86_64.rpm  
-> rm rstudio-server-rhel-1.2.5033-x86_64.rpm  
+#install RStudio-Server 1.2.5033 (2017-07-20)  
+wget https://download2.rstudio.org/server/centos6/x86_64/rstudio-server-rhel-1.2.5033-x86_64.rpm  
+yum install -y --nogpgcheck rstudio-server-rhel-1.2.5033-x86_64.rpm  
+rm rstudio-server-rhel-1.2.5033-x86_64.rpm  
 
 #install shiny 
-> R -e "install.packages('shiny', repos='http://cran.rstudio.com/')"  
+R -e "install.packages('shiny', repos='http://cran.rstudio.com/')"  
 
 _#install other you may need_  
 _#R -e \"install.packages(c('rmarkdown', 'shinydashboard', 'shinyjs'), repos='http://cran.rstudio.com/')"_  
@@ -83,10 +82,10 @@ _#R -e "install.packages(c('DT'), repos='http://cran.rstudio.com/')"_
   
 
 
-#install shiny-server 1.5.13.944 (2020-03-21)
-> wget https://download3.rstudio.org/centos6.3/x86_64/shiny-server-1.5.13.944-x86_64.rpm
-> yum install -y --nogpgcheck shiny-server-1.5.13.944-x86_64.rpm
-> rm shiny-server-1.4.2.786-rh5-x86_64.rpm
+#install shiny-server 1.5.13.944 (2020-03-21)  
+wget https://download3.rstudio.org/centos6.3/x86_64/shiny-server-1.5.13.944-x86_64.rpm
+yum install -y --nogpgcheck shiny-server-1.5.13.944-x86_64.rpm
+rm shiny-server-1.4.2.786-rh5-x86_64.rpm
 
 #update redhat
 yum install -y curl-devel
