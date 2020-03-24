@@ -7,33 +7,35 @@ https://mredsolo.shinyapps.io/InterActiveShinyMap/
 
 
 Use the below script to assist in setting up AWS instance of a server.
+click the raw button to see the real script.
+
 
 #!/bin/bash
 #this is an install script for AWS Redhat free EC2 instance.
-# if you want to update lunix 
+#if you want to update lunix 
 #yum -y update
 
-# if you will be using R library ‘leaflet’ remove the ‘#’ from the line below.
+#if you will be using R library ‘leaflet’ remove the ‘#’ from the line below.
 #yum install -y libpng-devel 
 
 #other libraries you may want to install in linux. Just remove the ‘#’
 #for the library you want to install
-# yum install -y nginx 
-# yum install -y gdebi-core 
-# yum install -y apache2-utils 
-# yum install -y pandoc 
-# yum install -y pandoc-citeproc 
-# yum install -y libssl-dev 
-# yum install -y libcurl4-gnutls-dev 
-# yum install -y libcairo2-dev 
-# yum install -y libgdal-dev 
-# yum install -y libgeos-dev yum install -y libxml2-dev 
+#yum install -y nginx 
+#yum install -y gdebi-core 
+#yum install -y apache2-utils 
+#yum install -y pandoc 
+#yum install -y pandoc-citeproc 
+#yum install -y libssl-dev 
+#yum install -y libcurl4-gnutls-dev 
+#yum install -y libcairo2-dev 
+#yum install -y libgdal-dev 
+#yum install -y libgeos-dev yum install -y libxml2-dev 
 #yum install -y libxt-dev 
 #yum install -y ibv8-dev
 
 #Note: if you use the free version of AWS and need to use the R library ‘readr’, you will have to create swap file
-# see link the link below for 4Gb of swap. 
-# https://aws.amazon.com/premiumsupport/knowledge-center/ec2-memory-swap-file/
+#see link the link below for 4Gb of swap. 
+#https://aws.amazon.com/premiumsupport/knowledge-center/ec2-memory-swap-file/
 
 #install R
 yum install -y R
@@ -86,5 +88,3 @@ yum install -y curl-devel
 #username and replace ‘thisismypassword’ with your own password
 useradd myusername 
 echo myusername:thisismypassword | chpasswd
-
-
