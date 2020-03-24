@@ -16,7 +16,7 @@ click the raw button to see the real script.
 #if you want to update lunix  
 #yum -y update
 
-#if you will be using R library ‘leaflet’ remove the ‘#’ from the line below.  
+#‘leaflet’ library requires 'livpng-devel'.  
 #yum install -y libpng-devel 
 
 #other libraries you may want to install in linux Just remove the ‘#’
