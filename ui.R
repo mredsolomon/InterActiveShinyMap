@@ -1,7 +1,7 @@
 library(shiny)
 library(semantic.dashboard)
 library(leaflet)
-
+library(DT)
 
 ui <- dashboardPage(
   dashboardHeader(color = "blue", title = "Dashboard Demo", inverted = TRUE),

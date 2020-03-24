@@ -1,0 +1,12 @@
+name: InterActiveShinyMap
+title: InterActiveShinyMap
+username:
+account: mredsolo
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1962960
+bundleId: 2895310
+url: https://mredsolo.shinyapps.io/InterActiveShinyMap/
+when: 1584559576.80846
+asMultiple: FALSE
+asStatic: FALSE

@@ -1,6 +1,6 @@
 
 
-
+library(DT)
 
 
 shinyServer(function(input, output, session) {
@@ -9,7 +9,7 @@ shinyServer(function(input, output, session) {
   # initialize the master clickable datatable/ caption can be changed
   output$master = DT::renderDataTable(datatable(
     df_master, selection = 'none',
-    caption = 'Using a proxy object to interact with table and map',
+    caption = 'Select row to interact with map.',
     options=list(columnDefs = list(list(visible=FALSE, targets=c(0))))
     )%>% formatStyle(1, cursor = 'pointer'), server = FALSE
   )
@@ -25,7 +25,7 @@ shinyServer(function(input, output, session) {
     df_CCSD, selection = 'none', options = list(
       comlumnDefs = list(list(targets = 1, visible = FALSE)), autoWidth = FALSE, width = 300
     ),
-    caption = 'Using a proxy object to interact with table and map'
+    caption = 'Select row to interact with map.'
   )%>% formatStyle(1, cursor = 'pointer'), server = FALSE
   #,target = 'row',backgroundColor = styleEqual(c("123W","234F"),c("green","yellow"))
   #formatStyle(
@@ -86,4 +86,32 @@ shinyServer(function(input, output, session) {
   
 })
   
+# 
+
+
+_#R -e \"install.packages(c('rmarkdown', 'shinydashboard', 'shinyjs'), repos='http://cran.rstudio.com/')"_  
+_#R -e \"install.packages(c('shinydashboard'), repos='http://cran.rstudio.com/')"_  
+_#R -e "install.packages(c('shinyjs'), repos='http://cran.rstudio.com/')"_  
+_#R -e "install.packages(c('dplyr'), repos='http://cran.rstudio.com/')"_  
+_#R -e "install.packages(c('tidyr'), repos='http://cran.rstudio.com/')"_  
+_#R -e "install.packages(c('readr'), repos='http://cran.rstudio.com/')"_  
+_#R -e "install.packages(c('tidyr'), repos='http://cran.rstudio.com/')"_  
+_#R -e "install.packages(c('lazyeval'), repos='http://cran.rstudio.com/')"_  
+_#R -e "install.packages(c('stringr'), repos='http://cran.rstudio.com/')"_  
+_#R -e "install.packages(c('ggthemes'), repos='http://cran.rstudio.com/')"_  
+_#R -e "install.packages(c('ggExtra'), repos='http://cran.rstudio.com/')"_  
+_#R -e "install.packages(c('magrittr'), repos='http://cran.rstudio.com/')"_  
+_#R -e "install.packages(c('viridis'), repos='http://cran.rstudio.com/')"_  
+_#R -e "install.packages(c('gridExtra'), repos='http://cran.rstudio.com/')"_  
+_#R -e "install.packages(c('lubridate'), repos='http://cran.rstudio.com/')"_  
+_#R -e "install.packages(c('fasttime'), repos='http://cran.rstudio.com/')"_  
+_#R -e "install.packages(c('data.table'), repos='http://cran.rstudio.com/')"_  
+_#R -e "install.packages(c('sp'), repos='http://cran.rstudio.com/')"_  
+_#R -e "install.packages(c('rgdal'), repos='http://cran.rstudio.com/')"_  
+_#R -e "install.packages(c('rgeos'), repos='http://cran.rstudio.com/')"_  
+_#R -e "install.packages(c('adehabitatHR'), repos='http://cran.rstudio.com/')"_  
+_#R -e "install.packages(c('geojsonio'), repos='http://cran.rstudio.com/')"_  
+_#R -e "install.packages(c('maptools'), repos='http://cran.rstudio.com/')"_  
+_#R -e "install.packages(c('leaflet'), repos='http://cran.rstudio.com/')"_  
+_#R -e "install.packages(c('highcharter'), repos='http://cran.rstudio.com/')"_  
   

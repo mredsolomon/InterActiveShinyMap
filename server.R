@@ -1,6 +1,6 @@
 
 
-
+library(DT)
 
 
 shinyServer(function(input, output, session) {
@@ -9,7 +9,7 @@ shinyServer(function(input, output, session) {
   # initialize the master clickable datatable/ caption can be changed
   output$master = DT::renderDataTable(datatable(
     df_master, selection = 'none',
-    caption = 'Using a proxy object to interact with table and map',
+    caption = 'Select row to interact with map.',
     options=list(columnDefs = list(list(visible=FALSE, targets=c(0))))
     )%>% formatStyle(1, cursor = 'pointer'), server = FALSE
   )
@@ -25,7 +25,7 @@ shinyServer(function(input, output, session) {
     df_CCSD, selection = 'none', options = list(
       comlumnDefs = list(list(targets = 1, visible = FALSE)), autoWidth = FALSE, width = 300
     ),
-    caption = 'Using a proxy object to interact with table and map'
+    caption = 'Select row to interact with map.'
   )%>% formatStyle(1, cursor = 'pointer'), server = FALSE
   #,target = 'row',backgroundColor = styleEqual(c("123W","234F"),c("green","yellow"))
   #formatStyle(
