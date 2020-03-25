@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "640947075",
+    "hash" : "0",
     "id" : "38A577FF",
-    "lastKnownWriteTime" : 1585106578,
-    "last_content_update" : 1585106578564,
+    "lastKnownWriteTime" : 1585115312,
+    "last_content_update" : 1585115313026,
     "path" : "~/Applications/InterActiveShinyMap/README.md",
     "project_path" : "README.md",
     "properties" : {
-        "cursorPosition" : "23,15",
-        "scrollLine" : "0"
+        "cursorPosition" : "26,9",
+        "scrollLine" : "6"
     },
     "read_only" : false,
     "read_only_alternatives" : [

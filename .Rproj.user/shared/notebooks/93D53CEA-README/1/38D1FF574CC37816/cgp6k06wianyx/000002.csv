@@ -1,0 +1,2 @@
+"0","library(knitr)"
+"0","kable(mtcars[1:5, ], caption = ""A knitr kable."")"
