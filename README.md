@@ -4,7 +4,7 @@ this is what the web app looks like
 
 https://mredsolo.shinyapps.io/InterActiveShinyMap/
 
-Use the 'ASW setup script' to assist in setting up AWS instance of a server.
+Use the 'ASW setup script' to assist in setting up an AWS instance.
 
 ## AWS free instance configuration:
 
@@ -20,12 +20,13 @@ Type | Protocal | Port Range | Source  | Description
   SSH       |  TCP       |     22       | Anywhere:0.0.0.0/0, ::/0   |   Login
   HTTP      |  TCP      |    80         |   Anywhere:0.0.0.0/0, ::/0   |   HTTP
   Custom TCP|  TCP      |      3838     |     Anywhere:0.0.0.0/0, ::/0  |    Shiny Server Default
-  Custim TCP|  TCP      |      8787     |     Anywhere:0.0.0.0/0, ::/0  |    RStudio server Defaul
+  Custim TCP|  TCP      |      8787     |     Anywhere:0.0.0.0/0, ::/0  |    RStudio Server Default
   
 
 
 7. Review
 8. Launch
+## This method will take 10 to 20 minutes to complete configuration.
 
 ## resources
 * [Allocate swap memory AWS EC2](https://aws.amazon.com/premiumsupport/knowledge-center/ec2-memory-swap-file/)
