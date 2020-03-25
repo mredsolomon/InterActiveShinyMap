@@ -11,7 +11,7 @@ Use the 'ASW setup script' to assist in setting up an AWS instance.
 1. AMI: Amazon Linux AMI 2018.03.0 (HVM), SSD Volume Type - ami-0998bf58313ab53d
 2. Instance Type:  t2.micro => free tier eligible  
 3. Configure Instance Details: **PASTE content of [AWS setup script](https://github.com/mredsolomon/InterActiveShinyMap/blob/master/AWS%20setup%20script)** file in 'User data' text box; bottom of the page
-4. Add-Storage: add more than 16 GiB to Size GiB) text box
+4. Add-Storage: add more than 16 GiB to Size (GiB) text box
 5. Add Tags: nothing needed
 6. Configure Security Group: configure as following
 
