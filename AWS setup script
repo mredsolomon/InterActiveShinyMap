@@ -99,8 +99,8 @@ rm shiny-server-1.4.2.786-rh5-x86_64.rpm
 #update redhat
 yum install -y curl-devel
 
-#set up user of shiny studio. Be sure to replace ‘myusername’ with your own
-#username and replace ‘thisismypassword’ with your own password
+#set up user of shiny studio. Be sure to replace ‘mredthehorse’ with your own username
+#replace ‘wwilburr’ with your own password
 useradd mredthehorse
 echo mredthehorse:wwilburr | chpasswd
 
