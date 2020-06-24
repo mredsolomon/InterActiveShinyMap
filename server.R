@@ -11,6 +11,7 @@ shinyServer(function(input, output, session) {
     df_master, selection = 'none',
     caption = 'Select row to interact with map.',
     options=list(columnDefs = list(list(visible=FALSE, targets=c(0))))
+    
     )%>% formatStyle(1, cursor = 'pointer'), server = FALSE
   )
   
